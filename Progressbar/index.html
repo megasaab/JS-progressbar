@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressbar</title>
+    <style>
+         .progress{
+            margin: 15px 0;
+        }
+    </style>
+    <script src="progressbar.js"></script>
+</head>
+<body>
+    
+    <div class="progress progress-bar"></div>
+
+    <div class="progress progress-bar2"></div>
+    
+    
+
+ 
+
+    <script>
+            
+    const newBar = new Progressbar({
+        start: 0,
+    });
+
+    newBar.init('.progress-bar');
+
+
+    const newBar2 = new Progressbar({
+        start: 40,
+        bg: 'blue'
+    });
+
+    newBar2.init('.progress-bar2');
+
+    
+    </script>
+</body>
+</html>
